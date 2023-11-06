@@ -37,11 +37,11 @@ class ListadoLibros:
         eliminar_button.grid(row=3, column=2)
 
         # Crear lista de libros
-        self.lista_libros = ttk.Treeview(self.ventana, columns=("Codigo", "Titulo", "Precio"))
-        self.lista_libros.heading("#0", text="Codigo")
-        self.lista_libros.heading("#1", text="Titulo")
-        self.lista_libros.heading("#2", text="Precio")
-        self.lista_libros.heading("#3", text="Estado")
+        self.lista_libros = ttk.Treeview(self.ventana, columns=("Codigo", "Titulo", "Precio", "Estado"), show="headings")
+        self.lista_libros.heading("#1", text="Codigo")
+        self.lista_libros.heading("#2", text="Titulo")
+        self.lista_libros.heading("#3", text="Precio")
+        self.lista_libros.heading("#4", text="Estado")
         self.lista_libros.grid(row=4, column=0, columnspan=3)
 
         # Configurar evento para cargar datos al hacer clic en un elemento de la lista

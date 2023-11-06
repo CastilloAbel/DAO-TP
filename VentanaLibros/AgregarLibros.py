@@ -28,7 +28,7 @@ class AgregarLibro:
         Entry(frame1, textvariable=self.estado).grid(row=3, column=1)
 
         if self.datos == []:
-            Button(frame2, text="Aceptar", command=self.agregar_libro).pack(side="left", padx=10)
+            Button(frame2, text="Agregar", command=self.agregar_libro).pack(side="left", padx=10)
         else:
             Button(frame2, text="Editar", command=self.editar_libro).pack(side="left", padx=10)
         

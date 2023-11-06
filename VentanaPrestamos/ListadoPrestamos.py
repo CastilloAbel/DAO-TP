@@ -38,7 +38,7 @@ class ListadoPrestamos:
 
         # Crear lista de Prestamos
         self.lista_Prestamos = ttk.Treeview(self.ventana, columns=("Dni del socio", "Codigo del libro", "Fecha Prestamo", "Dias Pactados"), show="headings")
-        self.lista_Prestamos.heading("#1", text="Dia del socio")
+        self.lista_Prestamos.heading("#1", text="Dni del socio")
         self.lista_Prestamos.heading("#2", text="Codigo del libro")
         self.lista_Prestamos.heading("#3", text="Fecha Prestamo")
         self.lista_Prestamos.heading("#4", text="Dias Pactados")
