@@ -5,7 +5,7 @@ from tkinter import *
 class AgregarLibro:
     def __init__(self, datos=[]):
         self.window = Tk()
-        self.window.title("Alta de persona")
+        self.window.title("Alta de libros")
         self.datos = datos
 
         frame1 = Frame(self.window)
